@@ -1,0 +1,15 @@
+In the inital implementation only limited operation were considered .
+Below is the list of operations which will be tracked 
+1)File open , read , write 
+2)Connecting to black listed ip , reading and writing from that ip address(TCP)
+3)Changing the mode or ownership of files 
+4)Changing the uid of the process 
+
+In the Intial implementation we will be considering only those system calls which 
+will be returning 0 or non zero on success and -1 or -ve number on errors 
+
+In the next release the following features are panned to be included 
+1)tracking shared memory creation , attaching to shared memeory , readinga nd writing into teh shared memory
+2)Tracking File copying 
+3)tracking the child process  
+4)Tracking UDP communication with the black listed ip address 
